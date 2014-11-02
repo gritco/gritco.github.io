@@ -3,25 +3,26 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4; 
+// Brand colors
+$body-bg: #9CF;
+$brand-color-1: #F00;
+$brand-color-2: #039;
 
-// Grays
+// Colors
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$white: #FFF;
+$blue:  #039;
+$red:   #F00;
+
+// Sizes
+$font-size-base: 16px;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
+// Header
+$header-font-size: 20px;
+$navbar-font-size: 15px;
+

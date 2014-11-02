@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -16,52 +16,60 @@
     <![endif]-->
     
     <!-- Favicons -->
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.png">
-	<link rel="icon" href="{{ site.baseurl }}/images/favicon.ico">
-	<!--[if IE]>
-		<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico" />
-	<![endif]-->
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.png">
+    <link rel="icon" href="{{ site.baseurl }}/images/favicon.ico">
+    <!--[if IE]>
+        <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico" />
+    <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+</head>
 
-  <body>
-  <header>
-  	<div class="header__description">
-  		<p>{{ site.description }}</p>
-  	</div>
-  	<div class="header__banner">
-  		
-  	</div>
-  </header>
-  
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-          
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+<body>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+<header>
+    <nav class="navbar  navbar-default  navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Gritco France logo" src="images/gritco-france.png">
+            </a>
+            <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#main-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse  navbar-collapse" id="main-navbar">
+            <ul class="nav  navbar-nav">
+                <li class="active"><a href="#">Accueil</a></li>
+                <li><a href="#">Gommage - Sablage</a></li>
+                <li><a href="#">Mat spéciaux</a></li>
+                <li><a href="#">Traitement d'air</a></li>
+                <li><a href="#">Asp. cabines</a></li>
+                <li><a href="#">Haute pression</a></li>
+                <li><a href="#">Liens</a></li>
+            </ul>
+            <div class="nav  navbar-nav  navbar-right  navbar__flags">
+                <a class="navbar-link" href="http://www.gritco.nl/"><img class="navbar__flag" alt="site en néerlandais" src="/images/flag-nl.png"></a>
+                <a class="navbar-link" href="http://www.gritco.nl/index_uk.htm"><img class="navbar__flag" alt="site en néerlandais" src="/images/flag-uk.png"></a>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <footer>
-      {% include svg-icons.html %}
-    </footer>
-    
-  </body>
+<div role="main" class="main  container">
+    {{ content }}
+</div>
+
+<footer>
+    {% include svg-icons.html %}
+</footer>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+</body>
 </html>
