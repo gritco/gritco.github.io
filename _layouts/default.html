@@ -32,7 +32,7 @@
 <header>
     <nav class="navbar  navbar-default  navbar-fixed-top" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
                 <img alt="Gritco France logo" src="{{ site.baseurl }}/images/gritco-france.png">
             </a>
             <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#main-navbar">
@@ -44,13 +44,11 @@
         </div>
         <div class="collapse  navbar-collapse" id="main-navbar">
             <ul class="nav  navbar-nav">
-                <li class="active"><a href="#">Accueil</a></li>
-                <li><a href="#">Gommage - Sablage</a></li>
-                <li><a href="#">Mat spéciaux</a></li>
-                <li><a href="#">Traitement d'air</a></li>
-                <li><a href="#">Asp. cabines</a></li>
-                <li><a href="#">Haute pression</a></li>
-                <li><a href="#">Liens</a></li>
+                <li class="active"><a href="{{ site.baseurl }}/index.html">Accueil</a></li>
+                {% for post in site.posts %}
+                <li><a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a></li>
+                {% endfor %}
+                <li><a href="{{ site.baseurl }}/liens/">Liens</a></li>
             </ul>
             <div class="nav  navbar-nav  navbar-right  navbar__flags">
                 <a class="navbar-link" href="http://www.gritco.nl/"><img class="navbar__flag" alt="site en néerlandais" src="{{ site.baseurl }}/images/flag-nl.png"></a>

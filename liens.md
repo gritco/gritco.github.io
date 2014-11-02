@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Liens
+permalink: /liens/
 ---
 
 Some information about you!
