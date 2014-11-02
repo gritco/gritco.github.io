@@ -6,14 +6,29 @@
 header {
 
 	.navbar {
-	    border-top: 10px solid $brand-color-1;
+	    border-top: 5px solid $brand-color-1;
+	    border-bottom: 5px solid $brand-color-2;
 	    border-radius: 0px;
 	    background-color: $white;
 	    font-size: $navbar-font-size;
+	    color: $brand-color-2;
 	}
 	
 	.navbar-brand {
     	padding: 0;
+	}
+	
+	a {
+    	color: $brand-color-2 !important;
+	}
+	
+	li.active a, li a:hover {
+    	background-color: $white !important;
+    	box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+    	border-bottom: 3px solid $brand-color-3;
+    	border-top: 3px solid $brand-color-3;
 	}
 	
 	.navbar__flags {

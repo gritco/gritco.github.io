@@ -8,6 +8,7 @@ $body-bg: #9CF;
 $brand-color-1: #F00;
 $brand-color-2: #039;
 $brand-color-3: #9CF;
+$brand-color-3-lighter: #CCE5FF;
 
 // Colors
 $black: #000;
@@ -15,8 +16,11 @@ $white: #FFF;
 $blue:  #039;
 $red:   #F00;
 
-// Sizes
+// Font settings
 $font-size-base: 16px;
+$font-color: $black;
+$h2-size: 30px;
+$h2-color: $brand-color-2;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;

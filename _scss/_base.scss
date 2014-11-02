@@ -12,7 +12,7 @@ body {
   padding-top: 60px;
   font-family: $helvetica;
   font-size: $font-size-base;
-  color: $black;
+  color: $font-color;
 }
 
 .main {
@@ -28,14 +28,10 @@ body {
     padding-bottom: $footer-height + 30px;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
+h2 {
+    font-size: $h2-size;
+    color: $h2-color;
+    margin-bottom: 30px;
 }
 
 .text-brand-1 {
@@ -48,5 +44,15 @@ body {
 
 .text-brand-3 {
     color: $brand-color-3;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
 
