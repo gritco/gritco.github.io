@@ -3,6 +3,10 @@
 // BASE
 //
 
+html, body {
+    height: 100%;
+}
+
 body {
   background: $body-bg;
   padding-top: 60px;
@@ -12,7 +16,14 @@ body {
 }
 
 .main {
+    min-height: 100%;
+}
+
+.main__container {
     background-color: $white;
+    padding-top: 30px;
+    overflow: auto;
+    padding-bottom: $footer-height + 30px;
 }
 
 .clearfix:before,
@@ -24,3 +35,16 @@ body {
 .clearfix:after {
     clear: both;
 }
+
+.text-brand-1 {
+    color: $brand-color-1;
+}
+
+.text-brand-2 {
+    color: $brand-color-2;
+}
+
+.text-brand-3 {
+    color: $brand-color-3;
+}
+

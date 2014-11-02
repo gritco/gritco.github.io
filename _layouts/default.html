@@ -60,12 +60,20 @@
     </nav>
 </header>
 
-<div role="main" class="main  container">
-    {{ content }}
+<div class="main" role="main">
+    <div class="container  main__container  clear-top">
+        {{ content }}
+    </div>
 </div>
 
-<footer>
-    {% include svg-icons.html %}
+<footer class="navbar-static-bottom">
+    <div class="footer__adress">
+        <p><span class="text-brand-1">GRITCO</span> <span class="text-brand-3">France</span></p>
+        <p>7 avenue de la Sablière<br>94370 SUCY EN BRIE</p>
+        <p>Tél.: 01 56 74 28 91 - Fax : 01 56 74 20 75</p>
+        <p>RCS Créteil - B 439245010</p>
+    </div>
+    {% include social-icons.html %}
 </footer>
 
 <script type="text/javascript" src="/js/jquery.min.js"></script>
