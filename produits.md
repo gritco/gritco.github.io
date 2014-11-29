@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Liens
-navtitle: Liens
-position: 200
-permalink: /liens/
+title: Produits
+navtitle: Produits
+position: 3
+permalink: /produits/
 ---
 
 Some information about you!

@@ -44,18 +44,24 @@
         </div>
         <div class="collapse  navbar-collapse" id="main-navbar">
             <ul class="nav  navbar-nav">
-                <li class="active"><a href="{{ site.baseurl }}/index.html">Accueil</a></li>
-                {% for post in site.posts %}
-                <li><a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a></li>
+                {% assign sorted_pages = (site.pages | sort: 'position') %}
+                {% for p in sorted_pages %}
+                    {% if p.navtitle %}
+                    <li {% if p.url == page.url %}class="active"{% endif %}>
+                        <a href="{{ p.url }}">{{ p.navtitle }}</a>
+                    </li>
+                    {% endif %}
                 {% endfor %}
-                <li><a href="{{ site.baseurl }}/liens/">Liens</a></li>
             </ul>
             <div class="nav  navbar-nav  navbar-right  navbar__flags">
                 <a class="navbar-link" href="http://www.gritco.nl/"><img class="navbar__flag" alt="site en néerlandais" src="{{ site.baseurl }}/images/flag-nl.png"></a>
-                <a class="navbar-link" href="http://www.gritco.nl/index_uk.htm"><img class="navbar__flag" alt="site en néerlandais" src="{{ site.baseurl }}/images/flag-uk.png"></a>
+                <a class="navbar-link" href="http://www.gritco.nl/index_uk.htm"><img class="navbar__flag" alt="site en anglais" src="{{ site.baseurl }}/images/flag-uk.png"></a>
             </div>
         </div>
     </nav>
+    
+    <div class="header__logo">
+    </div>
 </header>
 
 <div class="main" role="main">
@@ -64,7 +70,7 @@
     </div>
 </div>
 
-<footer class="navbar-static-bottom">
+<footer>
     <div class="footer__adress">
         <p><span class="text-brand-1">GRITCO</span> <span class="text-brand-3">France</span></p>
         <p>7 avenue de la Sablière<br>94370 SUCY EN BRIE</p>

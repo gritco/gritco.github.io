@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Liens
-navtitle: Liens
-position: 200
-permalink: /liens/
+title: Le guide Gritco
+navtitle: Le guide Gritco
+position: 2
+permalink: /guide-gritco/
 ---
 
 Some information about you!
