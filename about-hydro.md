@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Liens
-navtitle: Liens
-position: 200
-permalink: /liens/
+title: Histoire de l'hydrogommage
+navparent: about
+subnavtitle: Hydrogommage
+position: 2
+permalink: /hydrogommage/
 ---
 
 Some information about you!

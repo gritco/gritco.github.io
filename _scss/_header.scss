@@ -8,6 +8,24 @@ header {
 	.navbar {
 	    background-color: $white;
 	    font-size: $navbar-font-size;
+	    
+	    .navbar-nav {
+    	    
+	        li.active {
+        	    a,
+        	    a:hover {
+                	background-color: $brand-color-2 !important;
+                	color: $white !important;
+                }
+            }
+            .open {
+                a.dropdown-toggle,
+                a.dropdown-toggle:hover {
+                    background-color: $white !important;
+                    color: $black !important;
+                }
+            }
+        }
 	}
 	
 	.navbar-brand {
@@ -23,12 +41,6 @@ header {
     	width: 45px;
     	padding-top: 5px;
     	height: auto;
-	}
-	
-	.header__logo {
-    	background: url("images/gritco-done.png") center no-repeat;
-    	width: 100%;
-    	height: 300px;
 	}
 }
 

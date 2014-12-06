@@ -1,0 +1,27 @@
+---
+layout: page
+title: Produits
+navtitle: Produits
+position: 3
+permalink: /produits/
+---
+
+<p>Gritco vous propose un ensemble de produits efficaces, si vous ne savez pas par où commencer, rendez-vous sur <a href="/guide-gritco">notre guide</a>.</p>
+
+<h2>Hydrogommage</h2>
+<ul>
+{% for product in site.posts %}
+    {% if product.category == "hydrogommage" %}
+        <h2><a href="{{product.url}}">{{product.title}}</a></h2>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<h2>Accessoires</h2>
+<ul>
+{% for product in site.posts %}
+    {% if product.category == "accessoires" %}
+        <h2><a href="{{product.url}}">{{product.title}}</a></h2>
+    {% endif %}
+{% endfor %}
+</ul>

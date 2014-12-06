@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Produits
-navtitle: Produits
-position: 3
-permalink: /produits/
+title: Qui sommes-nous ?
+navparent: about
+subnavtitle: Gritco
+position: 1
+permalink: /about-gritco/
 ---
 
 Some information about you!
