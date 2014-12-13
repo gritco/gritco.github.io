@@ -5,14 +5,31 @@ navtitle: Produits
 position: 3
 permalink: /produits/
 ---
-
-<p>Gritco vous propose un ensemble de produits efficaces, si vous ne savez pas par où commencer, rendez-vous sur <a href="/guide-gritco">notre guide</a>.</p>
+<p><span class="text-brand-1">GRITCO</span> <span class="text-brand-2">France</span> vous propose une gamme de matériels qui couvre tous les besoins des secteurs du BTP, du nettoyage et de l'industrie. Si vous ne savez pas par où commencer, rendez-vous sur <a href="/guide-gritco">notre guide</a>.</p>
 
 <h2>Hydrogommage</h2>
 <ul>
 {% for product in site.posts %}
     {% if product.category == "hydrogommage" %}
-        <h2><a href="{{product.url}}">{{product.title}}</a></h2>
+        <li><a href="{{product.url}}">{{product.title}}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<h2>Sablage</h2>
+<ul>
+{% for product in site.posts %}
+    {% if product.category == "sablage" %}
+        <li><a href="{{product.url}}">{{product.title}}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<h2>Matériaux speciaux</h2>
+<ul>
+{% for product in site.posts %}
+    {% if product.category == "mat spéciaux" %}
+        <li><a href="{{product.url}}">{{product.title}}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -21,7 +38,7 @@ permalink: /produits/
 <ul>
 {% for product in site.posts %}
     {% if product.category == "accessoires" %}
-        <h2><a href="{{product.url}}">{{product.title}}</a></h2>
+        <li><a href="{{product.url}}">{{product.title}}</a></li>
     {% endif %}
 {% endfor %}
 </ul>

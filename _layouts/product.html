@@ -1,15 +1,28 @@
 ---
-layout: page
+layout: default
 ---
-
-<div class="post">
-
-  <div class="entry">
+<div class="main  container  box" role="main">
+    <h1><span class="text-brand-1">{{ page.namepart1 }}</span><span class="text-brand-2">{{ page.namepart2 }}</span><span class="text-black">{{ page.namepart3 }}</span></h1>
+    
+    <div class="pull-right">
+        <div id="carousel" class="center-block carousel slide" data-ride="carousel"> 
+            <ol class="carousel-indicators">
+                {% assign nb = (page.images | size) | minus: 1 %}
+                {% for i in (0..nb) %}
+                    <li data-target="#carousel" data-slide-to="{{ i }}" {% if i == 0 %}class="active"{% endif %}></li>
+                {% endfor %}
+            </ol>   
+            <div class="carousel-inner" role="listbox">
+                {% assign first = true %}
+                {% for image in page.images %}
+                    <div class="item {% if first == true %}active{% assign first = false %}{% endif %}">
+                        <img src="/images/{{ image }}" alt="{{ page.title }}">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>   
+    </div>
+    
     {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
+    
 </div>
