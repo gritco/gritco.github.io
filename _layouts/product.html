@@ -4,6 +4,7 @@ layout: default
 <div class="main  container  box" role="main">
     <h1><span class="text-brand-1">{{ page.namepart1 }}</span><span class="text-brand-2">{{ page.namepart2 }}</span></h1>
     
+    {% if (page.images | size) > 0 %}
     <div class="pull-right">
         <div id="carousel" class="center-block carousel slide" data-ride="carousel"> 
             <ol class="carousel-indicators">
@@ -22,6 +23,7 @@ layout: default
             </div>
         </div>   
     </div>
+    {% endif %}
     
     {{ content }}
     

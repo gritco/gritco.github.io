@@ -7,9 +7,10 @@ permalink: /produits/
 ---
 <p><span class="text-brand-2">GRITCO</span> <span class="text-brand-1">France</span><span class="text-brand-2">™</span> vous propose une gamme de matériels qui couvre tous les besoins des secteurs du BTP, du nettoyage et de l'industrie. Si vous ne savez pas par où commencer, rendez-vous sur <a href="/guide-gritco">notre guide</a>.</p>
 
+{% assign sorted = (site.posts | sort: 'position') %}
 <h2>Aérogommage / Hydrogommage</h2>
 <ul>
-{% for product in site.posts %}
+{% for product in sorted %}
     {% if product.category == "aerohydrogommage" %}
         <li><a href="{{product.url}}">{{product.title}}</a></li>
     {% endif %}
@@ -18,7 +19,7 @@ permalink: /produits/
 
 <h2>Sablage</h2>
 <ul>
-{% for product in site.posts %}
+{% for product in sorted %}
     {% if product.category == "sablage" %}
         <li><a href="{{product.url}}">{{product.title}}</a></li>
     {% endif %}
@@ -27,7 +28,7 @@ permalink: /produits/
 
 <h2>Matériaux speciaux</h2>
 <ul>
-{% for product in site.posts %}
+{% for product in sorted %}
     {% if product.category == "mat spéciaux" %}
         <li><a href="{{product.url}}">{{product.title}}</a></li>
     {% endif %}
@@ -36,9 +37,11 @@ permalink: /produits/
 
 <h2>Accessoires</h2>
 <ul>
-{% for product in site.posts %}
+{% for product in sorted %}
     {% if product.category == "accessoires" %}
         <li><a href="{{product.url}}">{{product.title}}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
+
+<h2><a href="/reconditionnement">Reconditionnement</a></h2>
