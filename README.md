@@ -51,4 +51,6 @@ Les catégories disponibles sont :
 - mat spéciaux
 - accessoires
 
+Les noms des catégories doivent être saisis exactement de la même manière.
+
 
