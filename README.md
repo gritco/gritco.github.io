@@ -46,8 +46,9 @@ images
 
 Les catégories disponibles sont :
 
-	* aerohydrogommage
-	* sablage
-    * mat spéciaux
-    * accessoires
+- aerohydrogommage
+- sablage
+- mat spéciaux
+- accessoires
+
 
