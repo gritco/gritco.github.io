@@ -36,3 +36,8 @@ position: 2 (la position du produit dans la liste des produits)
 Le reste du contenu du fichier correspond au contenu de la page produit. Il doit être écrit en format Markdown (par exemple avec [prose.io](http://prose.io). Il est également possible d'y intégrer du code HTML.
 
 ## Images
+
+Placez simplement les images dans le dossier
+```
+images
+```
