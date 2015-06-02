@@ -10,7 +10,10 @@ avec un nom au format suivant :
 ```
 annee-mois-jour-NomDuProduit.md
 ```
-par exemple 2015-6-15-NouveauProduit.md
+par exemple
+```
+2015-6-15-NouveauProduit.md
+```
 
 ou copiez et renommez un fichier de produit existant dans le dossier.
 
