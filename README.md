@@ -21,7 +21,7 @@ Le début du fichier doit contenir les lignes suivantes :
 ```
 ---
 layout: product (ne pas modifier)
-category: accessoires (la catégorie du produit)
+category: accessoires (la catégorie du produit voir la partie "Catégories")
 title: Armex® (le titre de la page du produit)
 namepart1: Micro (la partie du nom qui apparaîtra en rouge)
 namepart2: Strip™ (la partie du nom qui apparaîtra en bleu)
@@ -41,3 +41,13 @@ Placez simplement les images dans le dossier
 ```
 images
 ```
+
+## Catégories
+
+Les catégories disponibles sont :
+
+	* aerohydrogommage
+	* sablage
+    * mat spéciaux
+    * accessoires
+
