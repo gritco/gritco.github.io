@@ -7,10 +7,11 @@ permalink: /produits/
 published: true
 ---
 
+
 <p><span class="text-brand-2">GRITCO</span> <span class="text-brand-1">France</span><span class="text-brand-2">™</span> vous propose une gamme de matériels qui couvre tous les besoins des secteurs du BTP, du nettoyage et de l'industrie. Si vous ne savez pas par où commencer, rendez-vous sur <a href="/guide-gritco">notre guide</a>.</p>
 
 {% assign sorted = (site.posts | sort: 'position') %}
-<h2>Aérogommage / Hydrogommage</h2>
+<h1>Aérogommage / Hydrogommage</h1>
 <ul>
 {% for product in sorted %}
     {% if product.category == "aerohydrogommage" %}
@@ -19,7 +20,7 @@ published: true
 {% endfor %}
 </ul>
 
-<h2>Sablage</h2>
+<h1>Sablage</h1>
 <ul>
 {% for product in sorted %}
     {% if product.category == "sablage" %}
